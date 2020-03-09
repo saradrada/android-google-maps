@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">google-maps-challenge</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
