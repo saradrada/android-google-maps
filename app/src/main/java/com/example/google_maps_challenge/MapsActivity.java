@@ -106,12 +106,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mLocationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
             checkLocation();
 
-
             svLocation = findViewById(R.id.svLocation);
             btnAddMarker = findViewById(R.id.btnAddMarker);
             btnAddAim = findViewById(R.id.btnAddAim);
             tvDescription = findViewById(R.id.tvDescription);
-            tvDescription.setText("prueba");
 
             svLocation.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
@@ -340,11 +338,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onStop() {
         super.onStop();
-
-   /*     if(mGoogleApiClient.isConnected()){
-            mGoogleApiClient.disconnect();
-
-        }*/
     }
 
     private void checkClosest(){
